@@ -1,9 +1,13 @@
-# infinicept-project`
+# infinicept-project
 
-### Usage
-
-## client side
+## Usage:
+### client side
 ``` bash
 $ npm install
 $ npm run dev
+```
+
+### server side
+``` bash
+TODO
 ```
