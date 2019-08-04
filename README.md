@@ -7,8 +7,9 @@ with npm:
 $ npm install
 $ npm run dev
 ```
-with yarn:
+
 ``` bash
+with yarn:
 $ yarn serve
 ```
 
