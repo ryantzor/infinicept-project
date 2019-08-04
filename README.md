@@ -8,6 +8,7 @@ $ npm install
 $ npm run dev
 ```
 with yarn:
+``` bash
 $ yarn serve
 ```
 
