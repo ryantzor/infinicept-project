@@ -2,18 +2,17 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <NavBar />
-    <About msg="About Us"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import About from './components/About.vue'
+// import About from './components/About.vue'
 import NavBar from './components/NavBar.vue'
 
 export default {
   name: 'app',
   components: {
-    About,
     NavBar
   }
 }

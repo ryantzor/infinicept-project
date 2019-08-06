@@ -1,19 +1,38 @@
 <template>
   <div>
+  
+
+
     <nav class="navbar navbar-default">
       <div class="container-fluid">
           <div class="navbar-header">
           <a class="navbar-brand" href="#">TECHNOLODON</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           </div>
-          <ul class="nav navbar-nav navbar-right">
-            <!-- <li class="active"><a href="#">Home</a></li> -->
-            <li><a @click="showFeatureComingSoon()" href="#">FEED</a></li>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <!-- <ul class="nav navbar-nav">
+              <li><a @click="showFeatureComingSoon()" href="#">FEED</a></li>
             <li><a @click="showFeatureComingSoon()" href="#">TEAM</a></li>
             <li><a @click="showFeatureComingSoon()" href="#">ABOUT</a></li>
             <li><a @click="showFeatureComingSoon()" href="#">BLOG</a></li>
             <li @click="showFeatureComingSoon()" class="navbar-right-furthest"><a href="#">CONTACT</a></li>
             <button @click="showFeatureComingSoon()" type="button" class="btn btn-default">SIGN UP</button>
+            </ul> -->
+            <ul class="nav navbar-nav navbar-right">
+            <!-- <li class="active"><a href="#">Home</a></li> -->
+            <li><a @click="showFeatureComingSoon()" href="#">FEED</a></li>
+            <li><a @click="showFeatureComingSoon()" href="#">TEAM</a></li>
+            <li><a @click="showFeatureComingSoon()" href="#/about">ABOUT</a></li>
+            <li><a @click="showFeatureComingSoon()" href="#">BLOG</a></li>
+            <li @click="showFeatureComingSoon()" class="navbar-right-furthest"><a href="#">CONTACT</a></li>
+            <button @click="showFeatureComingSoon()" type="button" class="btn btn-default">SIGN UP</button>
           </ul>
+          </div>
+          
       </div>
     </nav>
   </div>
@@ -40,34 +59,34 @@ export default {
     color: #2699FB;
 }
 .navbar-brand {
-  margin-left: 20px !important;
   font-size: 24px;
-  line-height: 60px;
+  padding-top:35px;
   text-align: center;
+  vertical-align: middle;
   font-weight: 600;
   color: white;
 }
 .navbar button {
   font-size: 10px;
   font-weight: 600;
-  height: 35px;
-  width: 100px;
-  margin-top: 25px;
-  margin-right: 10px;
+  margin-top: 30px;
   color: #FFFFFF;
   background-color: #01101D;
   border: 2px solid #FFFFFF; /* Green */
 }
 .navbar ul a {
+  margin-top:20px;
   font-weight: 900;
-  padding-left: 50px;
-  line-height: 60px;
   text-align: center;
   color: white;
+}
+.navbar-collpase {
+  height: 300px !important;
 }
 .navbar {
   height: 100px;
   background-color: #01101D;
+  border: 0px;
 }
 .navbar-right-furthest {
   padding-left: 30px;
