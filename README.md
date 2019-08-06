@@ -1,11 +1,14 @@
 # infinicept-project
 
 Hello Nick! <br /><br />
-I have finished up the base requirements and now I'm going to style it up a bit and make it more responsive. I am also working on creating a simple in memory database using loki.js. This will allow you to actually save the employee info. <br /><br />
 
 ### High-level design: <br />
-I used vue.js as my front-end framework. My 'pages' are parent components that contain it's child components like the employee cards etc. I also created components for the navbar and footer that persist across the application.
+I used vue.js as my front-end framework. My 'pages' are parent components that contain it's child components like the employee cards etc. I also created components for the navbar and footer that persist across the application. Everything is mobile friendly thanks to bootstrap's css and some custom styling.
 
+### TODO: <br />
+- Create a centralized data store using Vuex (Similar to Redux in React) so that employee data can be centralized and used in any component
+- Implement material design components and styling for a nicer looking UI
+- Add Loki.js in-memory database to allow saving of the employee
 
 ## Usage:
 ### client side
