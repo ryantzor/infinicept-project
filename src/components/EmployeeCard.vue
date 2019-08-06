@@ -1,10 +1,19 @@
 <template>
-  <div>
+  <div style="margin-bottom:30px;">
     <div class="card-background">
-      <h3 class="card-header-text">{{ name }}</h3>
-      <span>{{ title }}</span>
-      <br/>
-      <p>{{ bio }}</p>
+      <div class="card-content">
+        <h3 class="card-header-text">{{ name }}</h3>
+        <small class="pull-right quote-text">{{ quote }}</small>
+        <span class="title-text">{{ title }}</span>
+        <br>
+        <br>
+        <br>
+        <p>{{ bio }}</p>
+      </div>
+      <div class="card-footer">
+        <a class="edit-button">Edit Profile</a>
+        <button class="pull-right contact-button">CONTACT</button>
+      </div>
     </div>
   </div>
 </template>
@@ -22,17 +31,46 @@ export default {
 </script>
 
 <style scoped>
+.quote-text {
+  font-size: 8pt;
+}
+.card-content {
+  padding: 30px 50px;
+}
+.card-footer {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+}
 .card-background {
   background-color: #E1F1FF;
 }
 .edit-button {
+  color: #01101D;
+  font-size: 8pt;
+  font-weight: 600;
+  text-decoration: none;
+}
+.contact-button {
   background-color: #2699FB;
+  color: white;
+  font-size: 7pt;
+  font-weight: 700;
+  border: 2px solid #FFFFFF; /* Green */
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
 }
 .card-header-text {
   color: #2699FB;
   font-weight: bold;
 }
+.title-text {
+  color: #01101D;
+  font-weight: 700;
+}
 p {
   color: #01101D;
+  line-height: 25px;
 }
 </style>

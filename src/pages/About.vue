@@ -19,6 +19,9 @@
         <br/>
         <br/>
         <p>Don't settle for less...Settle for Technolodon. We keep it REAL.</p>
+        <div class="about-footer">
+          <small>Technolodon LLC. A real company despite what you have heard</small>
+        </div>
       </div>
     </div>
     <div class="col-md-5">
@@ -28,7 +31,8 @@
           :key="employee.id"
           :name="employee.name"
           :title="employee.title"
-          :bio="employee.bio">
+          :bio="employee.bio"
+          :quote="employee.quote">
         </employee-card>
       </div>
     </div>
@@ -89,8 +93,13 @@ export default {
   background-color: #01101D;
   padding: 70px;
   color:white;
-  font-size: 15px;
+  font-size: 13pt;
   font-weight: bold;
+}
+.about-footer {
+  margin-top: 120px;
+  font-size: 10pt;
+  padding-bottom: 90px;
 }
 h1 {
   text-align: center;
