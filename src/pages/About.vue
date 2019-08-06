@@ -6,7 +6,7 @@
     <div class="col-md-1">
     </div>
     <div class="col-md-5">
-      <div class="center-content about-section">
+      <div class="center-content about-section  md-elevation-4">
         <h2 style="font-weight: 600; text-align:center">ABOUT TECHNOLODON</h2>
         <br/>
         <br/>

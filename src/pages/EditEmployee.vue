@@ -4,10 +4,10 @@
       <h1>Edit Employee</h1>
     </div>
     <div>
-      <div class="col-md-3"></div>
-      <div class="col-md-6">
+      <div class="col-lg-4 col-md-3"></div>
+      <div class="col-lg-4 col-md-6">
         <div class="row">
-          <div class="edit-background">
+          <div class="md-elevation-5 edit-background">
             <div class="center-content">
               <div class="row">
               <form>
@@ -27,14 +27,18 @@
                   <label for="pwd">Biography</label>
                   <textarea v-model="bio" class="form-control"></textarea>
                 </div>
-                <button @click="saveForm" class="pull-right technolodon-button save-button">SAVE</button>
+                <md-button @click="saveForm" class="md-primary md-raised pull-right save-button">save</md-button>
+                <md-button @click="$router.go(-1)" class="md-icon-button pull-left save-button">
+                  <md-icon>arrow_back</md-icon>
+                </md-button>
+                <!-- <button @click="saveForm" class=" technolodon-button save-button">SAVE</button> -->
               </form>
               </div>
             </div>
           </div>
         </div>
       </div>        
-      <div class="col-md-3"></div>
+      <div class="col-lg-4 col-md-3"></div>
     </div>
     
   </div>
@@ -100,7 +104,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .save-button {
-
+  margin-top:40px;
 }
 .edit-background {
   background-color: #E1F1FF;
@@ -109,7 +113,10 @@ export default {
   max-width: 150px;
 }
 .center-content {
-  padding: 20px 150px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 h1 {
   text-align: center;
