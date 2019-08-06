@@ -1,10 +1,17 @@
 import About from '../src/pages/About.vue'
+import EditEmployee from '../src/pages/EditEmployee.vue'
 
 
 let about = {
   path: '/About',
   name: 'About',
   component: About
+}
+
+let editEmployee = {
+    path: '/EditEmployee',
+    name: 'EditEmployee',
+    component: EditEmployee
 }
 
 const routes = [
@@ -15,6 +22,7 @@ const routes = [
     redirect: '/about'
   },
   about,
+  editEmployee
 //   {
 //     path: '/dashboard',
 //     component: DashboardLayout,

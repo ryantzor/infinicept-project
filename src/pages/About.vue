@@ -1,5 +1,8 @@
 <template>
-  <div>
+  <div class="page">
+    <div>
+      <h1>About Us</h1>
+    </div>
     <div class="col-md-1">
     </div>
     <div class="col-md-5">
@@ -86,6 +89,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.page {
+  position:absolute; 
+  top:100px; 
+  bottom:100px; 
+  left:0px; 
+  right:0px; 
+  overflow:auto;
+}
 .center-content {
   margin-top:60px;
 }

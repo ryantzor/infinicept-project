@@ -11,8 +11,9 @@
         <p>{{ bio }}</p>
       </div>
       <div class="card-footer">
-        <a class="edit-button">Edit Profile</a>
-        <button class="pull-right contact-button">CONTACT</button>
+        <router-link class="edit-button" :to="{ name: 'EditEmployee', params: {name: name, title: title, quote: quote, bio: bio}}">Edit Profile</router-link>
+        <!-- <a @click="$router.push('EditEmployee')" class="edit-button">Edit Profile</a> -->
+        <button class="pull-right technolodon-button">CONTACT</button>
       </div>
     </div>
   </div>
@@ -50,16 +51,6 @@ export default {
   font-size: 8pt;
   font-weight: 600;
   text-decoration: none;
-}
-.contact-button {
-  background-color: #2699FB;
-  color: white;
-  font-size: 7pt;
-  font-weight: 700;
-  border: 2px solid #FFFFFF; /* Green */
-  width: 110px;
-  height: 40px;
-  border-radius: 5px;
 }
 .card-header-text {
   color: #2699FB;
