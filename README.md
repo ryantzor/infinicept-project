@@ -1,29 +1,19 @@
-# my-project
+# infinicept-project
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+## Usage:
+### client side
+``` bash
+with npm:
+$ npm install
+$ npm run dev
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
+``` bash
+with yarn:
+$ yarn serve
 ```
 
-### Lints and fixes files
+### server side
+``` bash
+TODO
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
