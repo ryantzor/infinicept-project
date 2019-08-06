@@ -120,14 +120,17 @@ h1 {
   margin-bottom: 40px;
 }
 input {
+  padding: 20px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
 textarea {
+  padding: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   min-height: 100px;
+  color: #01101D;
 }
 </style>
