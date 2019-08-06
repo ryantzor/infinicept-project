@@ -7,7 +7,7 @@ I used vue.js as my front-end framework. My 'pages' are parent components that c
 
 ### TODO: <br />
 - Create a centralized data store using Vuex (Similar to Redux in React) so that employee data can be centralized and used in any component
-- Implement material design components and styling for a nicer looking UI
+~~- Implement material design components and styling for a nicer looking UI~~
 - Add Loki.js in-memory database to allow saving of the employee
 
 ## Usage:
