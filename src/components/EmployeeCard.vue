@@ -1,6 +1,6 @@
 <template>
-  <div style="margin-bottom:30px;">
-    <div class="card-background">
+  <div>
+    <div style="margin-bottom: 30px;" class="card-background md-elevation-6">
       <div class="card-content">
         <h3 class="card-header-text">{{ name }}</h3>
         <small class="pull-right quote-text">{{ quote }}</small>
@@ -11,9 +11,15 @@
         <p>{{ bio }}</p>
       </div>
       <div class="card-footer">
-        <router-link class="edit-button" :to="{ name: 'EditEmployee', params: {name: name, title: title, quote: quote, bio: bio}}">Edit Profile</router-link>
+        
+        <!-- <router-link class="md-primary" :to="{ name: 'EditEmployee', params: {name: name, title: title, quote: quote, bio: bio}}"> -->
+          <md-button  style="text-decoration: none;" :to="{ name: 'EditEmployee', params: {name: name, title: title, quote: quote, bio: bio}}" class="md-icon-button md-raised">
+            <md-icon>edit</md-icon>
+          </md-button>
+        <!-- </router-link> -->
         <!-- <a @click="$router.push('EditEmployee')" class="edit-button">Edit Profile</a> -->
-        <button class="pull-right technolodon-button">CONTACT</button>
+        <md-button class="pull-right md-raised md-primary">contact</md-button>
+        <!-- <button class="pull-right technolodon-button">CONTACT</button> -->
       </div>
     </div>
   </div>
@@ -33,7 +39,7 @@ export default {
 
 <style scoped>
 .quote-text {
-  font-size: 8pt;
+  font-size: 9pt;
 }
 .card-content {
   padding: 30px 50px;

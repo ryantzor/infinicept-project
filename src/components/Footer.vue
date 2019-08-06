@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footer md-elevation-6">
     <div class="navbar navbar-blend navbar-fixed-bottom">
         <div style="display: flex; justify-content: center" class="nav">
             <ul class="nav navbar-nav">

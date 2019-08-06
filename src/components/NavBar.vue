@@ -1,9 +1,6 @@
 <template>
   <div>
-  
-
-
-    <nav class="navbar navbar-fixed">
+    <nav class="navbar navbar-fixed md-elevation-4">
       <div class="container-fluid">
           <div class="navbar-header">
           <a class="navbar-brand" href="#">TECHNOLODON</a>
@@ -31,7 +28,7 @@
             <li><a @click="$router.push('about')" href="#/about">ABOUT</a></li>
             <li><a @click="showFeatureComingSoon()" href="#">BLOG</a></li>
             <li @click="showFeatureComingSoon()" class="navbar-right-furthest"><a href="#">CONTACT</a></li>
-            <button @click="showFeatureComingSoon()" type="button" class="btn btn-default">SIGN UP</button>
+            <md-button @click="showFeatureComingSoon()" class="md-primary">sign up</md-button>
           </ul>
           </div>
           
@@ -42,7 +39,6 @@
 
 <script>
 import { Slide } from 'vue-burger-menu'
-
 export default {
   methods: {
     showFeatureComingSoon() {
@@ -64,13 +60,13 @@ export default {
 .navbar button {
   width: 80px;
   height: 35px;
-  font-size: 6pt;
-  font-weight: 600;
+  /* font-size: 6pt;
+  font-weight: 600; */
   margin-top: 30px;
   margin-right: 40px;
-  color: #FFFFFF;
-  background-color: #01101D;
-  border: 2px solid #FFFFFF; /* Green */
+  /* color: #FFFFFF; */
+  /* background-color: #01101D;
+  border: 2px solid #FFFFFF;  */
 }
 .navbar-brand {
   font-size: 24px;

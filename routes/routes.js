@@ -11,6 +11,7 @@ let about = {
 let editEmployee = {
     path: '/EditEmployee',
     name: 'EditEmployee',
+    meta: { transitionName: 'zoom' },
     component: EditEmployee
 }
 
@@ -23,128 +24,6 @@ const routes = [
   },
   about,
   editEmployee
-//   {
-//     path: '/dashboard',
-//     component: DashboardLayout,
-//     redirect: '/dashboard/overview',
-//     children: [
-//       {
-//         path: '/dashboard/calendar',
-//         name: 'Calendar',
-//         component: Calendar,
-//         beforeEnter: requireAuth
-//       },
-//       {
-//         path: '/dashboard/charts',
-//         name: 'Charts',
-//         component: Charts,
-//         beforeEnter: requireAuth
-//       },
-//       {
-//         path: '/dashboard/servicerequests',
-//         name: 'Service Requests',
-//         component: allServiceRequests,
-//         beforeEnter: requireAuth
-//       },
-//       {
-//         path: '/dashboard/mfiles',
-//         name: 'Files',
-//         component: ManagerFiles,
-//         beforeEnter: requireAuth
-//       },
-//       {
-//         path: '/dashboard/tfiles',
-//         name: 'Files',
-//         component: TenantFiles,
-//         beforeEnter: requireAuth
-//       },
-//       {
-//         path: '/dashboard/mpayments',
-//         name: 'Payments',
-//         component: ManagerPayments,
-//         beforeEnter: requireAuth
-//       },
-//       {
-//         path: '/dashboard/tpayments',
-//         name: 'Payments',
-//         component: TenantPayments,
-//         beforeEnter: requireAuth
-//       },
-//       {
-//         path: '/dashboard/tinvoices',
-//         name: 'Invoices',
-//         component: TenantInvoices,
-//         beforeEnter: requireAuth
-//       },
-//       {
-//         path: '/dashboard/invoices',
-//         name: 'Invoices',
-//         component: ManagerInvoices,
-//         beforeEnter: requireAuth
-//       },
-//       {
-//         path: '/dashboard/payments',
-//         name: 'Payments',
-//         component: Payments,
-//         beforeEnter: requireAuth
-//       },
-//       {
-//         path: '/dashboard/properties',
-//         name: 'Properties',
-//         component: Properties,
-//         beforeEnter: requireAuth
-//       },
-//       {
-//         path: '/dashboard/tenants',
-//         name: 'Tenants',
-//         component: Tenants,
-//         beforeEnter: requireAuth
-//       },
-//       {
-//         path: '/dashboard/servicerequeststenant',
-//         name: 'Service Requests',
-//         component: tenantServiceRequests,
-//         beforeEnter: requireAuth
-//       },
-//       {
-//         path: '/dashboard/tenantcalendar',
-//         name: 'Calendar',
-//         component: CalendarTenant,
-//         beforeEnter: requireAuth
-//       }
-//     ]
-//   },
-//   componentsMenu,
-//   formsMenu,
-//   tablesMenu,
-//   mapsMenu,
-//   pagesMenu,
-//   loginPage,
-//   registerPage,
-//   resetPassword,
-//   forgotPassword,
-//   home,
-//   lockPage,
-//   {
-//     path: '/admin',
-//     component: DashboardLayout,
-//     redirect: '/dashboard/overview',
-//     children: [
-//       {
-//         path: '/dashboard/overview',
-//         name: 'Overview',
-//         component: Overview,
-//         beforeEnter: requireAuth
-//       },
-//       {
-//         path: '/dashboard/stats',
-//         name: 'Stats',
-//         component: Stats,
-//         beforeEnter: requireAuth
-//       }
-//     ]
-//   },
-//   { path: '*', component: NotFound }
 ]
 
 /**
